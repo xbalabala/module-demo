@@ -1,4 +1,9 @@
 // http://cs.smith.edu/~nhowe/262/labs/src/hellotty.c
+//
+// https://stackoverflow.com/questions/20719713/how-can-i-write-to-tty-from-a-kernel-module
+// use tty = get_current_tty(); instead of tty = current->signal->tty;
+// linux-4.18.5/drivers/tty/tty_jobctrl.c:156:struct tty_struct *get_current_tty(void)
+
 
 /* hellotty.c
  *
